@@ -12,7 +12,7 @@ int strNum(string _filename) {
 	int res = 0;
 	string s;
 	ifstream fin(_filename, ios_base::in);
-	if (fin.is_open()) 	while (getline(fin, s)) res++;
+	if (fin.is_open()) while (getline(fin, s)) res++;
 	else return 0;
 	fin.close();
 	return res;
@@ -21,7 +21,8 @@ int strNum(string _filename) {
 //naive text search 
 void naiveSearch(string needle, string *haystack, int num, list< pair<int,int> > &list) {
 	for (int i = 0; i < num; i++) 
-		for (int j = 0; j < haystack[i].length() - needle.length() + 1 ; j++) if (haystack[i].substr(j, needle.length()) == needle)  list.push_back(make_pair(i, j));
+		for (int j = 0; j < haystack[i].length() - needle.length() + 1 ; j++) 
+			if (haystack[i].substr(j, needle.length()) == needle)  list.push_back(make_pair(i, j));
 }
 
 //function for printing the elements in a list
@@ -53,6 +54,7 @@ int main(int argc, char **argv) {
 		naiveSearch(needle, haystack, n, naive);
 		cout << "Needle " << needle << " was found here:" << endl;
 		showlist(naive);
+		fin.close();
 	}
 	else{ 
 		cout << "File can't be opened!" << endl;
