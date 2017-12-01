@@ -8,13 +8,8 @@
 
 using namespace std;
 
-//const string filename = "Text.txt";
-
-
 int menu() {
 	int key = -1;
-	int alph = 25;
-	string filename = "Text.txt";
 	cout << "Type 0 to exit" << endl;
 	cout << "Type 1 to choose nunm of letters in alphabet" << endl;
 	cout << "Type 2 to type the needle to find" << endl;
@@ -93,17 +88,31 @@ int main(int argc, char **argv) {
 	
 	int counter = 0;
 	ifstream fin(filename, ios_base::in);
-	
+	int alph = 255;
 	int k = -1;
+	int len = 0;
 	double T1, tmp, T2;
-
+	srand(time(0));
 	while (k != 0) {
 		k = menu();
 		switch (k) {
+		case 1: 
+			cout << "Type the number of letters in alphabet" << endl;
+			cin >> alph;
+			break;
 		case 2:
 			cout << "Type needle to find" << endl;
 			cin >> needle;
-			system("cls");
+			break;
+		case 3:
+			cout << "Type needle length" << endl;
+			cin >> len;
+			for (int i = 0; i < len; i++) needle += (char)(rand() % 255);
+			cout << "Needle: " << needle << endl;;
+			break;
+		case 4: 
+			cout << "Type filename" << endl;
+			cin >> filename;
 			break;
 		case 5:
 			tmp = clock();
@@ -115,8 +124,9 @@ int main(int argc, char **argv) {
 			T1 = clock() - tmp;
 
 			//performing KMP
-			fin.clear();
-			fin.seekg(0);
+			fin.clear(); //clears the bits with errors 
+			fin.seekg(0); //returns pointer back to the beginning of the file
+			
 			counter = 0;
 			tmp = clock();
 			while (getline(fin, haystack)) {
