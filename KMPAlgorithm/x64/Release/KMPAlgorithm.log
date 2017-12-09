@@ -4,9 +4,9 @@ E:\mvs\VC\include\utility(200): warning C4267: 'initializing': conversion from '
   Main.cpp(79): note: see reference to function template instantiation 'std::pair<int,int>::pair<int,unsigned __int64,void,0>(std::pair<int,unsigned __int64> &&) noexcept' being compiled
   Main.cpp(79): note: see reference to function template instantiation 'std::pair<int,int>::pair<int,unsigned __int64,void,0>(std::pair<int,unsigned __int64> &&) noexcept' being compiled
   Generating code
-  2 of 363 functions ( 0.6%) were compiled, the rest were copied from previous compilation.
+  1 of 363 functions ( 0.3%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    7 functions had inline decision re-evaluated but remain unchanged
+    1 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   KMPAlgorithm.vcxproj -> E:\VSProjects\KMPAlgorithm\x64\Release\KMPAlgorithm.exe
   KMPAlgorithm.vcxproj -> E:\VSProjects\KMPAlgorithm\x64\Release\KMPAlgorithm.pdb (Full PDB)

@@ -115,6 +115,7 @@ int main(int argc, char **argv) {
 			cin >> filename;
 			break;
 		case 5:
+			//naive.clear();
 			tmp = clock();
 			//performing trivial
 			while (getline(fin, haystack)) {
@@ -128,6 +129,7 @@ int main(int argc, char **argv) {
 			fin.seekg(0); //returns pointer back to the beginning of the file
 			
 			counter = 0;
+			kmp.clear();
 			tmp = clock();
 			while (getline(fin, haystack)) {
 				SFT_KMP(needle, haystack, kmp, counter);
