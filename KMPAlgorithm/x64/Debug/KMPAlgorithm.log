@@ -1,0 +1,25 @@
+﻿  Main.cpp
+e:\vsprojects\kmpalgorithm\kmpalgorithm\main.cpp(142): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+e:\vsprojects\kmpalgorithm\kmpalgorithm\main.cpp(143): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+e:\vsprojects\kmpalgorithm\kmpalgorithm\main.cpp(174): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+e:\vsprojects\kmpalgorithm\kmpalgorithm\main.cpp(175): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+e:\vsprojects\kmpalgorithm\kmpalgorithm\main.cpp(212): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+e:\vsprojects\kmpalgorithm\kmpalgorithm\main.cpp(230): warning C4804: '<': unsafe use of type 'bool' in operation
+e:\vsprojects\kmpalgorithm\kmpalgorithm\main.cpp(295): warning C4804: '<': unsafe use of type 'bool' in operation
+e:\mvs\vc\include\utility(200): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  e:\vsprojects\kmpalgorithm\kmpalgorithm\main.cpp(84): note: see reference to function template instantiation 'std::pair<int,int>::pair<int,unsigned __int64,void,0>(std::pair<int,unsigned __int64> &&) noexcept' being compiled
+  e:\vsprojects\kmpalgorithm\kmpalgorithm\main.cpp(84): note: see reference to function template instantiation 'std::pair<int,int>::pair<int,unsigned __int64,void,0>(std::pair<int,unsigned __int64> &&) noexcept' being compiled
+  KMPAlgorithm.vcxproj -> E:\VSProjects\KMPAlgorithm\x64\Debug\KMPAlgorithm.exe
+  KMPAlgorithm.vcxproj -> E:\VSProjects\KMPAlgorithm\x64\Debug\KMPAlgorithm.pdb (Full PDB)
+      Start Debug Merging KMPAlgorithm.exe. 
+  Target: "E:\VSProjects\KMPAlgorithm\x64\Debug\KMPAlgorithm.exe"
+  target_dir: E:\VSProjects\KMPAlgorithm\x64\Debug\
+  Config: Debug 
+  Merging: '"""E:\VSProjects\KMPAlgorithm\"ILMerge\ILMerge.exe"" /wildcards /targetplatform:"v4, C:\Windows\Microsoft.NET\Framework\v4.0.30319" /out:"E:\VSProjects\KMPAlgorithm\x64\Debug\Output\KMPAlgorithm.exe" "E:\VSProjects\KMPAlgorithm\x64\Debug\KMPAlgorithm.exe" "E:\VSProjects\KMPAlgorithm\x64\Debug\*.dll"'
+  An exception occurred during merging:
+  ILMerge.Merge: Could not load assembly from the location 'E:\VSProjects\KMPAlgorithm\x64\Debug\KMPAlgorithm.exe'. Skipping and processing rest of arguments.
+     в ILMerging.ILMerge.Merge()
+     в ILMerging.ILMerge.Main(String[] args)
+  Merge failed 
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets(133,5): error MSB3073: The command ""E:\VSProjects\KMPAlgorithm\\ILMerge\merge_all.bat" "E:\VSProjects\KMPAlgorithm\" "E:\VSProjects\KMPAlgorithm\x64\Debug\KMPAlgorithm.exe" Debug
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets(133,5): error MSB3073: :VCEnd" exited with code 1.
